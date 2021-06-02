@@ -1,6 +1,6 @@
 # Mockup2
 
-#autors:
+#autors:GRUPO 1
 - Ciro Wagner Mamani Mamani
 
 <img src="logo.png" alt="logo"/>
