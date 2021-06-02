@@ -10,7 +10,7 @@
 	     color: purple;
 	   }
 	   ul li a {
-             animation: flotando 1s ilimited;
+             animation: flotando 1s infinite;
 	     display: inline-block;
 	     padding-bottom: 15px;
              background: linear-gradient(to right, #FD396E, #691875);
