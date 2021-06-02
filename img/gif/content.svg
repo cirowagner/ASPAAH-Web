@@ -9,10 +9,11 @@
 	     display: inline-block;
 	     color: white;
 	     font-family: 'Righteous', serif;
-	     font-size: 12em; 
+	     font-size: 2em; 
 	     text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
-	  }
-	  h2:after {
+	   }
+	   h2:after {
+             margin: 0;
   	     content: attr(data-shadow);
 	     position: absolute;
 	     top: .06em; left: .06em;
