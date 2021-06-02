@@ -1,0 +1,38 @@
+/*-------Nav Bar------*/
+header {
+    height: 0;
+
+    nav {
+        position: absolute;
+        z-index: 100;
+        top: 2em;
+
+        .logo {
+            position: absolute;
+            left: 3.5em;
+        }
+
+        .navbar-nav {
+            a {
+                padding: 0;  
+            }
+        }
+    }
+}
+
+/*------Border Style--------*/
+@mixin border($orientation, $tipo, $color) {
+    #{$orientation}: $tipo 2px $color;
+}
+
+.bord-item {
+    @include border(border-left, dashed, white);
+}
+
+.border-h2 {
+    @include border(border-bottom, dotted, #999999)
+}
+
+$danger: #503222;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
