@@ -2,13 +2,46 @@
 <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
 	<style>
-	   h3 {
+	   h2 {
 	     color: purple;
 	   }
+	   h2 {
+	     display: inline-block;
+	     color: white;
+	     font-family: 'Righteous', serif;
+	     font-size: 12em; 
+	     text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
+	  }
+	  h2:after {
+  	     content: attr(data-shadow);
+	     position: absolute;
+	     top: .06em; left: .06em;
+	     z-index: -1;
+	     text-shadow: none;
+	     background-image:
+	       linear-gradient(
+	         45deg,
+	         transparent 45%,
+	         hsla(48,20%,90%,1) 45%,
+	         hsla(48,20%,90%,1) 55%,
+	         transparent 0
+	        );
+	    background-size: .05em .05em;
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+	    animation: shad-anim 15s linear infinite;
+	    }
+
+    	    @keyframes shad-anim {
+	    0% {background-position: 0 0}
+	    0% {background-position: 100% -100%}
+	    }
+
 	   ul li {
 	     color: purple;
 	   }
 	   ul li a {
+            animation: flotando 1s ilimited;
 	    display: inline-block;
 	    padding-bottom: 15px;
             background: linear-gradient(to right, #FD396E, #691875);
@@ -17,7 +50,7 @@
 	    text-shadow: 0px 0px 10px rgb(255, 6, 159,0.3);	
 	   }
 	</style>
-	<h3>Authors:</h3>
+	<h2>Authors:</h2>
         <ul>
             <li><a>Ciro Wagner Mamani Mamani</a></li>
             <li><a>Alan Dagner Quenaya Yucra</a></li>
