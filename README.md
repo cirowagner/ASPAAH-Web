@@ -2,7 +2,6 @@
 
 #autors:
 - Ciro Wagner Mamani Mamani
-<<<<<<< HEAD
 
 <img src="logo.png" alt="logo"/>
 
