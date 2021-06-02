@@ -8,8 +8,8 @@
 	   ul li {
 	     color: purple;
 	   }
-	   ul li a{
-	    display: inline;
+	   ul li a {
+	    display: inline-block;
 	    padding-bottom: 15px;
             background: linear-gradient(to right, #FD396E, #691875);
 	    -webkit-background-clip: text;
