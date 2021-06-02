@@ -19,12 +19,15 @@
 	     text-shadow: 0px 0px 10px rgb(255, 6, 159,0.3);	
 	   }
 	   @keyframes flotando{
-	     to {
+	     0% {
 	       transform: translateX(2em);
 	     }
-	     from {
-	       transform: translateX(0em);
+	     50% {
+	       transform: translateX(-0.5em);
  	     }
+	     100% {
+	       transfrom: translateX(0em);
+	     }
            }
 	</style>
 	<h2>Authors:</h2>
