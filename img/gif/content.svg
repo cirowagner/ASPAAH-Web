@@ -20,13 +20,13 @@
 	   }
 	   @keyframes flotando{
 	     0% {
-	       transform: translateX(2em);
+	       transform: translateX(0em);
 	     }
 	     50% {
-	       transform: translateX(-0.5em);
+	       transform: translateX(2em);
  	     }
 	     100% {
-	       transfrom: translateX(0em);
+	       transfrom: translateX(-0.5em);
 	     }
            }
 	</style>
