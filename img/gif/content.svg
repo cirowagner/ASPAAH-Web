@@ -10,14 +10,19 @@
 	     color: purple;
 	   }
 	   ul li a {
-            animation: flotando 1s ilimited;
-	    display: inline-block;
-	    padding-bottom: 15px;
-            background: linear-gradient(to right, #FD396E, #691875);
-	    -webkit-background-clip: text;
-	    color: transparent;
-	    text-shadow: 0px 0px 10px rgb(255, 6, 159,0.3);	
+             animation: flotando 1s ilimited;
+	     display: inline-block;
+	     padding-bottom: 15px;
+             background: linear-gradient(to right, #FD396E, #691875);
+	     -webkit-background-clip: text;
+	     color: transparent;
+	     text-shadow: 0px 0px 10px rgb(255, 6, 159,0.3);	
 	   }
+	   @keyframe flotando{
+	     from {
+	       transform: translateY(2px);
+ 	     }
+           }
 	</style>
 	<h2>Authors:</h2>
         <ul>
