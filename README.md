@@ -2,4 +2,5 @@
 
 #autors:
 - Ciro Wagner Mamani Mamani
-
+- Alan Dagner Quenaya Yucra
+-
