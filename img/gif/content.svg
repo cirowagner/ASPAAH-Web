@@ -10,7 +10,7 @@
 	   }
 	   ul li a{
 	    display: inline;
-	    padding-bottom: 8px;
+	    padding-bottom: 15px;
             background: linear-gradient(to right, #FD396E, #691875);
 	    -webkit-background-clip: text;
 	    color: transparent;
