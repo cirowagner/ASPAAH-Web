@@ -19,8 +19,11 @@
 	     text-shadow: 0px 0px 10px rgb(255, 6, 159,0.3);	
 	   }
 	   @keyframes flotando{
+	     to {
+	       transform: translateX(2em);
+	     }
 	     from {
-	       transform: translateY(2px);
+	       transform: translateX(0em);
  	     }
            }
 	</style>
