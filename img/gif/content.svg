@@ -9,7 +9,7 @@
 	     color: purple;
 	   }
 	   ul li a{
-	    display: inline-block;
+	    display: inline;
 	    padding-bottom: 8px;
             background: linear-gradient(to right, #FD396E, #691875);
 	    -webkit-background-clip: text;
@@ -17,7 +17,7 @@
 	    text-shadow: 0px 0px 10px rgb(255, 6, 159,0.3);	
 	   }
 	</style>
-	<h3>Authorss:</h3>
+	<h3>Authors:</h3>
         <ul>
             <li><a>Ciro Wagner Mamani Mamani</a></li>
             <li><a>Alan Dagner Quenaya Yucra</a></li>
