@@ -5,5 +5,5 @@
 - Alan Dagner Quenaya Yucra
 
 <p align="center">
-  <img src="img/logo.png" width="350" title="hover text">
+  <img src="img/gif/gif 2.gif" width="100%" title="hover text">
 </p>
