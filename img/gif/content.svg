@@ -31,10 +31,10 @@
 	       transform: translateX(0em);
 	     }	
 	     50% {
-	       transform: translateX(4em);
+	       transform: translateX(3.5em);
  	     }
 	     100% {
-	       transfrom: translateX(-0.5em);
+	       transfrom: translateX(-1em);
 	     }
            }
 
@@ -43,10 +43,10 @@
 	       transform: translateX(0em);
 	     }
 	     50% {
-	       transform: translateX(4em);
+	       transform: translateX(3.5em);
  	     }
 	     100% {
-	       transfrom: translateX(-0.5em);
+	       transfrom: translateX(-1em);
 	     }
            }
 	
@@ -55,10 +55,10 @@
 	       transform: translateX(0em);
 	     }
 	     50% {
-	       transform: translateX(4em);
+	       transform: translateX(3.5em);
  	     }
 	     100% {
-	       transfrom: translateX(-0.5em);
+	       transfrom: translateX(-1em);
 	     }
            }
 	</style>
