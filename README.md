@@ -4,4 +4,4 @@
 - Ciro Wagner Mamani Mamani
 - Alan Dagner Quenaya Yucra
 
-![stack Overflow](http://lmsotfy.com/so.png)
+![logo](img/logo.png)
