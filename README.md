@@ -1,7 +1,7 @@
 # Mockup2
 
-#autors:
+#autors:GRUPO 1
 - Ciro Wagner Mamani Mamani
 - Alan Dagner Quenaya Yucra
 
-<img src="img/logo.png" alt="logo"/>
+![stack Overflow](http://lmsotfy.com/so.png)
