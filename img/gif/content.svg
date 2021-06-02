@@ -10,7 +10,6 @@
 	     color: purple;
 	   }
 	   ul li a {
-             animation: flotando 1s infinite;
 	     display: inline-block;
 	     padding-bottom: 15px;
              background: linear-gradient(to right, #FD396E, #691875);
@@ -18,7 +17,40 @@
 	     color: transparent;
 	     text-shadow: 0px 0px 10px rgb(255, 6, 159,0.3);	
 	   }
-	   @keyframes flotando{
+	   #a1 {
+	     animation: f1 2s ease infinite;
+ 	   }
+	   #a2 {
+	     animation: f2 2s ease-in infinite;
+ 	   }
+	   #a3 {
+	     animation: f3 2s ease-out infinite;
+ 	   }
+	   @keyframes f1{
+	     0% {
+	       transform: translateX(0em);
+	     }
+	     50% {
+	       transform: translateX(2em);
+ 	     }
+	     100% {
+	       transfrom: translateX(-0.5em);
+	     }
+           }
+
+	   @keyframes f2{
+	     0% {
+	       transform: translateX(0em);
+	     }
+	     50% {
+	       transform: translateX(2em);
+ 	     }
+	     100% {
+	       transfrom: translateX(-0.5em);
+	     }
+           }
+	
+	   @keyframes f3{
 	     0% {
 	       transform: translateX(0em);
 	     }
@@ -32,9 +64,9 @@
 	</style>
 	<h2>Authors:</h2>
         <ul>
-            <li><a>Ciro Wagner Mamani Mamani</a></li>
-            <li><a>Alan Dagner Quenaya Yucra</a></li>
-            <li><a>Yohel Aldahyr Moroco Mamani</a></li>
+            <li><a id="a1">Ciro Wagner Mamani Mamani</a></li>
+            <li><a id="a2">Alan Dagner Quenaya Yucra</a></li>
+            <li><a id="a3">Yohel Aldahyr Moroco Mamani</a></li>
         </ul>
         <!-- Other embed HTML element/text into SVG -->
     </div>
