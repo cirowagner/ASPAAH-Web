@@ -63,6 +63,27 @@ header {
 .border-h2 {
   border-bottom: dotted 3px #999999; }
 
+/*Mi parte*/
+.fondo {
+  background-color: #645445; }
+
+.loja {
+  display: flex;
+  color: black;
+  background-color: #E8E1CF;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-left: 3px;
+  float: right;
+  margin-right: 20px; }
+
+.email {
+  margin-right: 20px; }
+
+.loja i {
+  padding: 5px;
+  font-size: 40px; }
+
 /*!
  * Bootstrap v5.0.0-beta3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
