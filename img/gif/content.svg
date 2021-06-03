@@ -30,7 +30,7 @@
             animation: f3 1.5s ease-in-out infinite;
             }
         #a4 {
-            animation: f3 1.5s ease-in-out infinite;
+            animation: f3 1.5s ease infinite;
             }
         @keyframes f1{
                 0% {
