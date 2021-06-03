@@ -43,7 +43,7 @@ header {
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
-  --bs-danger: #503222;
+  --bs-danger: #645244;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -7500,3 +7500,34 @@ textarea.form-control-lg {
     display: inline-flex !important; }
   .d-print-none {
     display: none !important; } }
+
+
+/*Mi parte*/
+
+.fondo{
+  background-color: #645445;
+}
+
+.loja{
+  display: flex;
+  color: black;
+  background-color: #E8E1CF;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-left: 3px;
+  float: right;
+  margin-right: 20px;
+}
+
+.m-0{
+  padding-left: 10px;
+}
+
+.email{
+  margin-right: 20px;
+}
+
+.loja i{
+  padding: 5px;
+  font-size: 40px;
+}
