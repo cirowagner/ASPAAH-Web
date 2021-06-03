@@ -21,16 +21,16 @@ header {
 }
 
 /*------Border Style--------*/
-@mixin border($orientation, $tipo, $color) {
-    #{$orientation}: $tipo 2px $color;
+@mixin border($orientation, $ancho, $tipo, $color) {
+    #{$orientation}: $tipo $ancho $color;
 }
 
 .bord-item {
-    @include border(border-left, dashed, white);
+    @include border(border-left, 2px, dashed, white);
 }
 
 .border-h2 {
-    @include border(border-bottom, dotted, #999999)
+    @include border(border-bottom, 3px, dotted, #999999)
 }
 
 $danger: #503222;
