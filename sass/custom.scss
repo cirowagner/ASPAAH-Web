@@ -94,31 +94,24 @@ header {
     @include border(border-bottom, 3px, dotted, #999999)
 }
 
-/*Mi parte*/
+/*----Como comprar----*/
 
-.fondo{
+.contact-bg{
     background-color: #645445;
+    font-size: 11px;
   }
-  
-  .loja{
+@media screen and (min-width: 996px){
+    .contact-bg{
+        font-size: 16px;
+    }
+}  
+.loja{
     display: flex;
-    color: black;
-    background-color: #E8E1CF;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-left: 3px;
-    float: right;
-    margin-right: 20px;
-  }
-  
-  .email{
-    margin-right: 20px;
-  }
-  
-  .loja i{
-    padding: 5px;
-    font-size: 40px;
-  }
+    align-items: center;
+    background-color: #E8E1CF;        
+    float: right;    
+}
+
 $warning: #EA9B1B;
 $danger: #503222;
 $font-family-sans-serif: Arial; 
