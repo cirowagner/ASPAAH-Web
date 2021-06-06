@@ -4,142 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>.:Mockup:.</title>
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="fontawesonme/css/font-awesome.css">
+    <title>.::ASPAAH::.</title>
+    <link rel="stylesheet" href="css/custom.css">  
+    <!-- Fonts Family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">  
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-warning border border-3 border-end-0 border-start-0 p-0 p-lg-2">
-            <div class="container-fluid justify-content-end">
-                <a class="a-logo" href="#">
-                    <img class="logo" src="img/logo.png" alt="logo"/>
-                </a>                
-                <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    
-                 <i class="fa fa-bars navbar-toggler-icon d-flex justify-content-center align-items-center text-white fs-1"></i>
-               </button>
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    <div class="w-25 me-5"></div>
-                     <ul class="navbar-nav mb-2 mb-lg-0 ps-0 ps-lg-4 ps-xl-0 ms-0 ms-lg-5 ms-xl-0">
-                         <li class="navbar-item item-home"><a class="nav-link text-white" href="#"><i class="fa fa-home fs-3"></i></a></li>
-                         <li class="navbar-item "><a class="m-lg-0 nav-link text-white bord-item" href="#">Nosotros</a></li>
-                         <li class="navbar-item "><a class="m-lg-0 nav-link text-white bord-item" href="#">Productos</a></li>
-                         <li class="navbar-item "><a class="m-lg-0 nav-link text-white bord-item" href="#">Procesamiento</a></li>
-                         <li class="navbar-item "><a class="m-lg-0 nav-link text-white bord-item" href="#">Trabajo</a></li>
-                         <li class="navbar-item "><a class="m-lg-0 nav-link text-white bord-item" href="#">Logística</a></li>
-                         <li class="navbar-item "><a class="m-lg-0 nav-link text-white bord-item" href="#">Contacto</a></li>
-                     </ul>
+<body class="bg-secondary">
+    <!-- Header -->    
+    <header class="container-fluid py-2">       
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
         </nav>
+        <!-- Main -->
+        <main class="row title-container">
+            <!-- Title -->
+            <div class="col-6">
+                <p class="fs-3 m-0 text-warning">Ladies and gentlemen</p>
+                <div>
+                    <div class="selectors">
+                    </div>
+                    <div class="title">
+                        <h1>ASPAAH - A new beginning</h1>
+                        <a href="#" class="bg-warning text-dark border-10">Come now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Imagen Main-->
+            <div class="col-6 img-main">
+                <img src="img/mac.png" width="100%" alt>
+            </div>
+        </main>
     </header>
-    <div class="container-fluid container-nav p-0">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/slide1.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block text-start" id="text-slide">
-                    <h5>First slide label</h5>
-                    <p class="m-0">Some representative placeholder content for the first slide.</p>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <img src="img/slide1.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block text-start" id="text-slide">
-                    <h5>First slide label</h5>
-                    <p class="m-0">Some representative placeholder content for the first slide.</p>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <img src="img/slide1.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block text-start" id="text-slide">
-                    <h5>First slide label</h5>
-                    <p class="m-0">Some representative placeholder content for the first slide.</p>
-                  </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" id="prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" id="prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+    <!-- Content -->
+    <div class="container-fluid">
+        <!-- Slide Content -->        
     </div>
-    <main class="container-fluid border border-5 border-end-0 border-start-0">
-        <div class="row bg-success p-5">
-            <div class="col-md-4 text-white">
-                <h2 class="border-h2 mb-4">O Rancho SFP</h2>
-                <div class="card bg-success border-0">
-                    <div>
-                        <img src="img/ran3.jpg" class="card-img-top" alt="area1">
-                    </div>
-                    <div class="card-body p-0 pt-3">                        
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque dolores ipsa incidunt eius quidem animi tenetur iusto, corrupti doloremque voluptate qui non quia saepe soluta voluptatem alias illum, cumque unde?
-                        <p>                    
-                    </div>
-                </div>    
-            </div>
-            <div class="col-md-4 text-white">
-                <h2 class="border-h2 mb-4">Productos</h2>
-                <div class="card bg-success border-0">
-                    <div>
-                        <img src="img/prod3.jpg" class="card-img-top" alt="prod1">
-                    </div>
-                    <div class="card-body p-0 pt-3">                        
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque dolores ipsa incidunt eius quidem animi tenetur iusto, corrupti doloremque voluptate qui non quia saepe soluta voluptatem alias illum, cumque unde?
-                        <p>                    
-                    </div>
-                </div>            
-            </div>
-            <div class="col-md-4 text-white">
-                <h2 class="border-h2 mb-4">Clientes</h2>
-                <div class="card bg-success border-0">
-                    <div>
-                        <img src="img/prod4.jpeg" class="card-img-top" alt>
-                    </div>
-                    <div class="card-body p-0 pt-3">                        
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque dolores ipsa incidunt eius quidem animi tenetur iusto, corrupti doloremque voluptate qui non quia saepe soluta voluptatem alias illum, cumque unde?
-                        <p>                    
-                    </div>
-                </div>            
-            </div>
-            <div class="col-12 text-white">
-                <h2 class="mb-4 border-h2">¿Comó comprar?</h2>                
-                <div class="contact-bg">
-                    <div class="d-md-flex justify-content-between  p-3">
-                        <div class="d-flex align-items-center">
-                            <img src="img/telefone.svg" alt>
-                            <div class="ms-2" >
-                                <h5 class="m-1">Telefone</h5>
-                                <p class="m-1">(021) 2222-2222 ou (021) 2222-222 </p>
-                            </div>
-                        </div>                        
-                        <div class="email">
-                            <div class="d-flex align-items-center">
-                                <img src="img/email.svg" alt>
-                                <div class="ms-2">
-                                    <h5 class="m-1">E-mail:</h5>
-                                    <p class="m-1">Clique e apreencha nosso formulário</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="loja px-2 text-dark me-3">
-                    <i class="fa fa-shopping-basket fs-1"></i>
-                    <div>
-                        <h5 class="m-1">Loja Virtual</h5>
-                        <h6 class="m-1">Embreve</h6>
-                    </div>
+        <!-- ... -->
 
-                </div>
-            </div>
-        </div>        
-    </main>
+    <!-- Footer -->
+    <footer class="container-fluid">
+        
+    </footer>
+            <!-- ... -->
+    <!-- Scripts -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>

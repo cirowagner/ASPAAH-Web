@@ -1,119 +1,42 @@
-/*-------Nav Bar------*/
-@mixin border($orientation, $ancho, $tipo, $color) {
-    #{$orientation}: $tipo $ancho $color;
-}
+// ---Header.
 
 header {
-    height: 0;
-    nav {
-        position: absolute;
-        z-index: 100;
-        top: 2em;
-
-        .a-logo {            
-            position: absolute;            
-            left: 0.7em;
-            top: -1em;       
-            
-            .logo {
-                width: 50%;              
-            }
-                        
-            @media screen and (min-width: 990px){
-                .logo {
-                    width: 70%;                    
-                }
-            }            
-        }
-        @media screen and (min-width: 990px){
-            .a-logo {
-                left: 10.5em;    
-                top: -2em;                  
-            }
-        } 
-
-        .navbar-nav {            
-            .bord-item {      
-                line-height: 29px;      
-                display: flex;  
-                align-items: center;
-                margin-bottom: 0.5em;            
-            }   
-            .item-home {
-                opacity: 0;
-            }                 
-            @media screen and (min-width: 990px){
-                .bord-item {                    
-                    border: none;
-                    @include border (border-left, 2px, dashed, white); 
-                    &:hover{                    
-                        text-shadow: 4px 4px 4px saddlebrown;
-                        transform: translateY(-4px);
-                        background: none;
-                    }
-                }
-                .item-home {
-                    opacity: 1;
-                }
-            }
-            a {
-                padding: 0;
-                transition: all .3s;
-
-                &:hover{                    
-                    text-shadow: 4px 4px 4px saddlebrown;
-                    transform: translateY(-8px);
-                    background: rgba(255,255,255,.5)
-                }
-            }        
-        }
-    }
+    background-image: url("../img/img-forest3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;    
 }
-/*------Slide-----*/
-#prev {
-    width: 4em;      
-    opacity: 1;
-    span {
-        background: rgba($color: #271607, $alpha: .8);
 
+// ---Title
+.title-container {
+    p {
+        font-family: 'Caveat', cursive;
+    }
+
+    .title {
+        h1 {
+        font-size: 35px;
+        color: #fff;
+        font-weight: 1000;
+        }
+        a{
+            display: inline-block;
+            text-decoration: none;
+            padding: .3em 1.1em;              
+        }
     }    
 }
 
-#text-slide {
-    background: rgba($color: #271607, $alpha: .8);
-    width: 40%;
-    padding: 1em;
-    margin-left: 40%; 
-}
+// ---Imagen Main
 
-/*------Border Style--------*/
-.bord-item {
-    @include border (border-bottom, 1px, solid, white);
-}
-.border-h2 {
-    @include border(border-bottom, 3px, dotted, #999999)
-}
-
-/*----Como comprar----*/
-
-.contact-bg{
-    background-color: #645445;
-    font-size: 11px;
-  }
-@media screen and (min-width: 996px){
-    .contact-bg{
-        font-size: 16px;
+.img-main {
+    img {
+        filter: brightness(80%);
     }
-}  
-.loja{
-    display: flex;
-    align-items: center;
-    background-color: #E8E1CF;        
-    float: right;    
 }
 
-$warning: #EA9B1B;
-$danger: #503222;
-$font-family-sans-serif: Arial; 
+// -----Customm Variables.
+$warning: #A98729;
+$yellow: #A98729;
+$font-family-sans-serif: 'Roboto', sans-serif;
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import"../node_modules/bootstrap/scss/bootstrap.scss";

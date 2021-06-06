@@ -1,10 +1,10 @@
 {
-  "name": "tarea4",
+  "name": "ASPAAh-WEB",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "echo \"Error: no test specified\" && exit 1"
+    "build": "purgecss --css css/custom.css --content index.html -o css/styles.css"
   },
   "keywords": [],
   "author": "",
