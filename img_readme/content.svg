@@ -32,6 +32,9 @@
         #a4 {
             animation: f3 1.5s ease infinite;
             }
+        #a5{
+           animation: f2 1.5s ease-in-out infinite;
+            }
         @keyframes f1{
                 0% {
                     transform: translateX(0em);
@@ -65,6 +68,7 @@
                 <li><a id="a2">Alan Dagner Quenaya Yucra</a></li>
                 <li><a id="a3">Yohel Aldahyr Moroco Mamani</a></li>
                 <li><a id="a4">Brandon Everick Puma Mestas</a></li>
+                <li><a id="a5">Alexander Chucuya Mucho</a></li>
             </ul>
         <!-- Other embed HTML element/text into SVG -->
     </div>
