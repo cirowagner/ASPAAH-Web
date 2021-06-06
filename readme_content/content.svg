@@ -24,39 +24,21 @@
             animation: f1 1.5s ease infinite;
             }
         #a2 {
-            animation: f2 1.5s ease-in infinite;
+            animation: f1 1.5s ease-in infinite;
             }
         #a3 {
-            animation: f3 1.5s ease-in-out infinite;
+            animation: f1 1.5s ease-in-out infinite;
             }
         #a4 {
-            animation: f3 1.5s ease infinite;
+            animation: f1 1.5s ease infinite;
             }
         #a5{
-           animation: f2 1.5s ease-in-out infinite;
+           animation: f1 1.5s ease-in-out infinite;
             }
         @keyframes f1{
                 0% {
                     transform: translateX(0em);
                 }	
-                50% {
-                    transform: translateY(0.5em);
-                }                    
-            }
-
-        @keyframes f2{
-                0% {
-                    transform: translateX(0em);
-                }	
-                50% {
-                    transform: translateY(0.5em);
-                }                    
-            }
-        
-        @keyframes f3{
-                0% {
-                    transform: translateX(0em);
-                }
                 50% {
                     transform: translateY(0.5em);
                 }                    
