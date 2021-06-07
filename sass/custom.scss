@@ -23,7 +23,7 @@ header {
         a{
             display: inline-block;
             text-decoration: none;
-            padding: .3em 1.1em;              
+            padding: .3em 1.1em;    	
         }
     }    
 }
@@ -37,8 +37,9 @@ header {
 }
 
 // -----Customm Variables.
+$marron:#1C1B1A;
 $warning: #A98729;
-$yellow: #A98729;
+$amarillo: #A98729;
 $font-family-sans-serif: 'Roboto', sans-serif;
 
 @import"../node_modules/bootstrap/scss/bootstrap.scss";
