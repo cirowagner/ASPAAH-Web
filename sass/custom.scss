@@ -36,6 +36,35 @@ header {
     }
 }
 
+//---carrusel
+
+
+
+.slide{
+    width:30%;
+    margin: 50px auto;
+    
+}
+
+.carousel-item{
+    padding: 70px;
+    
+    
+}
+
+.carousel-item h5 p {
+    margin-bottom: 50px;
+}
+
+.d-block{
+    border: solid #A98729 2px;
+    padding-bottom: 30px;
+}
+
+.numero{
+    margin-bottom: 50px;
+}
+
 // -----Customm Variables.
 $marron:#1C1B1A;
 $warning: #A98729;

@@ -19,6 +19,23 @@ header {
 .img-main img {
   filter: brightness(80%); }
 
+.slide {
+  width: 30%;
+  margin: 50px auto; }
+
+.carousel-item {
+  padding: 70px; }
+
+.carousel-item h5 p, .carousel-item .h5 p {
+  margin-bottom: 50px; }
+
+.d-block {
+  border: solid #A98729 2px;
+  padding-bottom: 30px; }
+
+.numero {
+  margin-bottom: 50px; }
+
 /*!
  * Bootstrap v5.0.0-beta3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -32,7 +49,7 @@ header {
   --bs-pink: #d63384;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
-  --bs-yellow: #A98729;
+  --bs-yellow: #ffc107;
   --bs-green: #198754;
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
