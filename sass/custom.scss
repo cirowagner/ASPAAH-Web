@@ -65,10 +65,23 @@ header {
     margin-bottom: 50px;
 }
 
+div h5{
+    color: #A98729;
+}
+
+.container-fluid{
+    background-color:#181B1E;
+}
+
+hr{
+    background: white;
+}
+
+
 // -----Customm Variables.
 $marron:#1C1B1A;
 $warning: #A98729;
-$amarillo: #A98729;
+$white: #FFF;
 $font-family-sans-serif: 'Roboto', sans-serif;
 
 @import"../node_modules/bootstrap/scss/bootstrap.scss";
