@@ -12,9 +12,3 @@ dentro del archivo escribir  @import "../node_modules/bootstrap/scss/bootstrap.s
 
 
 ---> node-sass -w sass -o css
-
-
-
-
-
-
