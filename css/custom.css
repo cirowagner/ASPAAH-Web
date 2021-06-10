@@ -20,6 +20,32 @@ header {
 .img-main img {
   filter: brightness(80%); }
 
+.slide {
+  width: 30%;
+  margin: 50px auto; }
+
+.carousel-item {
+  padding: 70px; }
+
+.carousel-item h5 p, .carousel-item .h5 p {
+  margin-bottom: 50px; }
+
+.d-block {
+  border: solid #A98729 2px;
+  padding-bottom: 30px; }
+
+.numero {
+  margin-bottom: 50px; }
+
+div h5, div .h5 {
+  color: #A98729; }
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  background-color: #181B1E; }
+
+hr {
+  background: white; }
+
 /*!
  * Bootstrap v5.0.0-beta3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -492,13 +518,7 @@ progress {
   font-size: 0.875em;
   color: #6c757d; }
 
-.container,
-.container-fluid,
-.container-sm,
-.container-md,
-.container-lg,
-.container-xl,
-.container-xxl {
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);

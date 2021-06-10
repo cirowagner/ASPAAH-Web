@@ -37,10 +37,51 @@ header {
     }
 }
 
+//---carrusel
+
+
+
+.slide{
+    width:30%;
+    margin: 50px auto;
+    
+}
+
+.carousel-item{
+    padding: 70px;
+    
+    
+}
+
+.carousel-item h5 p {
+    margin-bottom: 50px;
+}
+
+.d-block{
+    border: solid #A98729 2px;
+    padding-bottom: 30px;
+}
+
+.numero{
+    margin-bottom: 50px;
+}
+
+div h5{
+    color: #A98729;
+}
+
+.container-fluid{
+    background-color:#181B1E;
+}
+
+hr{
+    background: white;
+}
+
+
 // -----Customm Variables.
 $marron:#1C1B1A;
 $warning: #A98729;
-$amarillo: #A98729;
 $font-family-sans-serif: 'Roboto', sans-serif;
 
 @import"../node_modules/bootstrap/scss/bootstrap.scss";
