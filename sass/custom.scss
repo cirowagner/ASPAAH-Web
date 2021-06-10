@@ -37,49 +37,89 @@ header {
     }
 }
 
-//---carrusel
+//--- Carrusel
 
+#indicators {
+    border-radius: 100%;
+    width: 2px;
+    padding: .3em;
+    margin: 0 .5em;
+    transition: all .5s;
 
-
-.slide{
-    width:30%;
-    margin: 50px auto;
-    
+    &:hover {        
+        padding: .4em;
+    }
 }
 
-.carousel-item{
-    padding: 70px;
-    
-    
+.line-slide-top {
+    padding: 1px 0;    
+    border-left: solid 5em white;
+    border-right: solid 5em white;
 }
 
-.carousel-item h5 p {
-    margin-bottom: 50px;
+@media screen and (min-width: 520px) {
+    .line-slide-top {
+        border-left: solid 15em white;
+        border-right: solid 15em white;
+    }
 }
 
-.d-block{
-    border: solid #A98729 2px;
-    padding-bottom: 30px;
+@media screen and (min-width: 990px) {
+    .line-slide-top {
+        border-left: solid 32em white;
+        border-right: solid 32em white;
+    }
 }
 
-.numero{
-    margin-bottom: 50px;
+#carousel-item {
+    .container-item {
+        padding-left: 33%;
+        margin-bottom: 3em;
+    }
 }
 
-div h5{
-    color: #A98729;
+#line-slide-bottom {    
+    padding: 1px 0;
+    position: relative;
+    h2 {    
+        font-size: 16px;
+        position: absolute;   
+        
+    }
 }
 
-.container-fluid{
-    background-color:#181B1E;
-}
+// --- Info
 
-hr{
-    background: white;
+.body-info{
+    height: 500px;
+}
+.content-info{
+    width: 90%;
+    height: 500px;
+    margin: auto;
+}
+.imagen-inform{
+    height: 490px;
+    object-fit: cover;
+}
+.contect-info-main{
+    padding: 40px;
+    display: flex;
+    margin: auto;
+    background-image: url(../img/forest-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.imagen-inform{
+    width: 40%;
+}
+.content-info__text{
+    width: 55%;
 }
 
 
 // -----Customm Variables.
+$dark: #000;
 $marron:#1C1B1A;
 $warning: #A98729;
 $font-family-sans-serif: 'Roboto', sans-serif;
