@@ -1,19 +1,87 @@
 // ---Mixinig
+
+// -----Custom Variables.
+$dark: #000;
+$marron:#1C1B1A;
+$warning: #A98729;
+$success: #0c2c03;
+$font-family-sans-serif: 'Roboto', sans-serif;
+
 //--------------------------
 // ---Header.
 
 header {
-    background-image: url("../img/forest-desktop.jpg");
+    background-image: url("../img/forest-mobile1.jpeg");
     background-repeat: no-repeat;
-    background-size: 100%;    
+    background-size: 100%; 
+    position: relative;   
+
+    .logo {
+        position: absolute;
+        box-shadow: 0px 5px 20px $dark;
+        top: -1em;        
+        left: 4.7%;
+        width: 5.8em;
+        transform: rotate(45deg);
+        img {            
+            transform: rotate(-45deg);
+        }
+        cursor: pointer;
+    }
+    
+    #nav-link {        
+        color: white;
+        opacity: 1;
+        transition: all .2s;        
+
+        &:hover {
+            color: $warning;
+            transform: translateY(-5px);
+            text-shadow: 5px 5px 5px $dark;
+        }        
+    }
+    #nav-link-home {
+        opacity: 0;
+    }
+
+    @media screen and (min-width:998px){
+        #nav-link-home {
+            opacity: 1;            
+        }
+    }
+
+    .menu-fixed {        
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: 0;
+        width: 100%;        
+        box-shadow: 0px 3px 5px $dark;
+        animation: anim-menu .5s;
+
+        @keyframes anim-menu {
+            0%{
+                height: 0em;
+            }
+            100%{
+                height: 3.5em;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 766px){
+    header {
+        background-image: url("../img/forest-desktop.jpg");
+    }
 }
 
 // ---Title
-.title-container {
-    p {
-        font-family: 'Caveat', cursive;
-    }
+.cursive {
+    font-family: 'Caveat', cursive;        
+}
 
+.title-container {
     .title {
         h1 {
         font-size: 35px;
@@ -24,7 +92,12 @@ header {
             display: inline-block;
             text-decoration: none;
             padding: .3em 1.1em;  
-            font-size: 20px;  	
+            font-size: 20px;  
+            transition: box-shadow .1s;
+            
+            &:hover {
+                box-shadow: 0 0 8px $warning;
+            }
         }
     }    
 }
@@ -44,41 +117,16 @@ header {
     width: 2px;
     padding: .3em;
     margin: 0 .5em;
-    transition: all .5s;
-
-    &:hover {        
-        padding: .4em;
-    }
 }
 
-.line-slide-top {
-    padding: 1px 0;    
-    border-left: solid 5em white;
-    border-right: solid 5em white;
-}
-
-@media screen and (min-width: 520px) {
-    .line-slide-top {
-        border-left: solid 15em white;
-        border-right: solid 15em white;
-    }
-}
-
-@media screen and (min-width: 990px) {
-    .line-slide-top {
-        border-left: solid 32em white;
-        border-right: solid 32em white;
-    }
-}
-
-#carousel-item {
+#carousel-item {    
     .container-item {
         padding-left: 33%;
         margin-bottom: 3em;
     }
 }
 
-#line-slide-bottom {    
+#line-slide {    
     padding: 1px 0;
     position: relative;
     h2 {    
@@ -89,39 +137,15 @@ header {
 }
 
 // --- Info
-
-.body-info{
-    height: 500px;
-}
-.content-info{
-    width: 90%;
-    height: 500px;
-    margin: auto;
-}
-.imagen-inform{
-    height: 490px;
-    object-fit: cover;
-}
-.contect-info-main{
-    padding: 40px;
-    display: flex;
-    margin: auto;
-    background-image: url(../img/forest-desktop.jpg);
+.contect-info-main{    
+    background-image: url(../img/paisaje2.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-}
-.imagen-inform{
-    width: 40%;
-}
-.content-info__text{
-    width: 55%;
-}
+    background-size: 100%;    
 
-
-// -----Customm Variables.
-$dark: #000;
-$marron:#1C1B1A;
-$warning: #A98729;
-$font-family-sans-serif: 'Roboto', sans-serif;
+    .content-info {
+        backdrop-filter: blur(4px);
+    }
+}
+// ----------
 
 @import"../node_modules/bootstrap/scss/bootstrap.scss";
