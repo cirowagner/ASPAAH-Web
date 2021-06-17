@@ -9,6 +9,8 @@
     <!-- Fonts Family -->
     <link rel="preconnect" href="https://fonts.gstatic.com">  
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
 </head>
 <body class="bg-secondary">
     <!-- Header -->    
@@ -66,7 +68,7 @@
             </div>
         </nav>
         <!-- Main -->
-        <main class="row title-container">
+        <main class="row title-container py-5">
             <!-- Title -->
             <div class="col-md-6 d-flex justify-content-center flex-column ps-md-5 text-center text-md-start py-5 py-md-0">
                 <div>
@@ -77,18 +79,26 @@
                     </div>
                     <div class="title">
                         <h1 class="fs-1">ASPAAH - A new beginning</h1>
-                        <a href="#" class="bg-warning text-dark border-10 rounded-3 my-3">Come now</a>
+                        <a href="#" class="text-dark border-10 my-3 btn btn-warning py-1 px-3">Come now</a>
                     </div>
                 </div>
             </div>
             <!-- Imagen Main-->
-            <div class="col-md-6 img-main">
+            <div class="col-md-5 img-main">
                 <img src="img/maq1.png" width="100%" alt>
+            </div>
+            <div class="col-md-1 text-center text-white d-md-block d-flex align-items-center">
+                <div class="bg-white my-2" id="line"></div>
+                <div class="d-flex d-md-block">
+                    <div class="ms-2 m-md-0"><a class="text-white" href="#"><i class="fab fa-whatsapp"></i></a></div>
+                    <div class="ms-2 m-md-0"><a class="text-white" href="#"><i class="fab fa-facebook-f"></i></a></div>
+                    <div class="ms-2 m-md-0"><a class="text-white" href="#"><i class="fab fa-instagram"></i></a></div>
+                </div>
             </div>
         </main>
     </header>
     <!-- Content -->
-    <div class="container-fluid bg-dark ">      
+    <div class="container-fluid bg-dark">      
         <!-- Slide Content --> 
         <div class="py-4">
             <div id="line-slide" class="d-flex justify-content-center align-items-center bg-white my-3">
@@ -174,28 +184,71 @@
         </div>   
 
         <!-- Info -->
-        <div class="container-fluid contect-info-main">            
-                <div class="row content-info">
-                    <div class="col-md-5 imagen-inform w-25">
-                        <img src="img/vaca2.jpg" alt width="100%">
-                    </div>
-                    <div class="col-md-7 text-white">
-                        <h4 class="cursive text-warning">Sobre nosotros.</h4>
-                        <h2>¿Quienes Somos?</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas perspiciatis rem vitae, sint vel commodi aperiam maiores repudiandae quia beatae! Omnis obcaecati error vitae? Illo blanditiis ducimus distinctio sapiente suscipit.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique porro provident sunt culpa eos, consequuntur debitis. Ad expedita, maiores eos illo facilis quis, temporibus officiis deleniti, hic eum beatae culpa!</p>
+        <div class="container-fluid contect-info-main">
+            <div class="row content-info h-100 py-5">
+                <div class="col-md-3 imagen-inform d-flex">
+                    <img src="img/vaca2.jpg" alt width="100%">
+                </div>
+                <div class="col-md-9 text-white text-center text-md-start">
+                    <h4 class="cursive text-warning">Sobre nosotros.</h4>
+                    <h2 class="mb-4">¿Quienes Somos?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas perspiciatis rem vitae, sint vel commodi aperiam maiores repudiandae quia beatae! Omnis obcaecati error vitae? Illo blanditiis ducimus distinctio sapiente suscipit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique porro provident sunt culpa eos, consequuntur debitis. Ad expedita, maiores eos illo facilis quis, temporibus officiis deleniti, hic eum beatae culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit autem molestiae officiis enim, nemo, cumque nisi necessitatibus harum maiores saepe. Delectus quibusdam sit quod saepe dolore doloremque tempora accusantium. </p>
+                    <a class="btn btn-warning px-4" href="#">More about us</a>
+                </div>
+            </div>
+        </div>
+        <!-- Socios -->
+        <div class="container-fluid py-5">
+            <div class="row text-white">
+                <div class="col-md-3 d-flex align-items-center text-center">
+                    <div class="socios-int">
+                        <p class="m-0 fs-4 cursive text-warning">Lorem, ipsum dolor.</p>
+                        <h2 class="mb-4">Socios</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, voluptates.</p>
+                        <a class="mt-4 px-4 btn btn-warning" id="btn" href="">Inscribete</a>
                     </div>
                 </div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-sm-6 d-flex align-items-center">
+                            <a class="text-white pe-4" href=""><i class="fs-1 far fa-lightbulb"></i></a>
+                            <div class="pb-3">
+                                <h4 class="text-warning">Lorem ipsum dolor sit.</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quo beatae, blanditiis, ullam laboriosam itaque dolores explicabo enim eveniet facilis pariatur ad alias cupiditate ipsam maxime quia in et ex?</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 d-flex align-items-center">
+                            <a class="text-white pe-4" href=""><i class="fs-1 fas fa-tractor"></i></a>
+                            <div class="pb-3">
+                                <h4 class="text-warning">Lorem ipsum dolor sit.</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quo beatae, blanditiis, ullam laboriosam itaque dolores explicabo enim eveniet facilis pariatur ad alias cupiditate ipsam maxime quia in et ex?</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 d-flex align-items-center">
+                            <a class="text-white pe-4" href=""><i class="fs-1 fas fa-feather-alt"></i></a>
+                            <div class="socios_cont pt-4">
+                                <h4 class="text-warning">Lorem ipsum dolor sit.</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quo beatae, blanditiis, ullam laboriosam itaque dolores explicabo enim eveniet facilis pariatur ad alias cupiditate ipsam maxime quia in et ex?</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 d-flex align-items-center">
+                            <a class="text-white pe-4" href=""><i class="fs-1 fas fa-cheese"></i></a>
+                            <div class="socios_cont pt-4">
+                                <h4 class="text-warning">Lorem ipsum dolor sit.</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quo beatae, blanditiis, ullam laboriosam itaque dolores explicabo enim eveniet facilis pariatur ad alias cupiditate ipsam maxime quia in et ex?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-        <!-- ... -->
-
-
     <!-- Footer -->
     <footer class="container-fluid">
         
     </footer>
-            <!-- ... -->
+        <!-- ... -->
     <!-- Scripts -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>

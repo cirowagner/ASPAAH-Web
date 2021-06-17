@@ -40,6 +40,10 @@ header {
     height: 0em; }
   100% {
     height: 3.5em; } }
+    header .menu-fixed .logo {
+      top: -0.5em;
+      left: 5.5%;
+      width: 5em; }
 
 @media screen and (min-width: 766px) {
   header {
@@ -54,9 +58,6 @@ header {
   font-weight: 1000; }
 
 .title-container .title a {
-  display: inline-block;
-  text-decoration: none;
-  padding: .3em 1.1em;
   font-size: 20px;
   transition: box-shadow .1s; }
   .title-container .title a:hover {
@@ -64,6 +65,17 @@ header {
 
 .img-main img {
   filter: brightness(80%); }
+
+#line {
+  height: 1px;
+  width: 50%;
+  margin: 0; }
+
+@media screen and (min-width: 769px) {
+  #line {
+    height: 75%;
+    width: 1px;
+    margin-left: 49%; } }
 
 #indicators {
   border-radius: 100%;
@@ -88,6 +100,18 @@ header {
   background-size: 100%; }
   .contect-info-main .content-info {
     backdrop-filter: blur(4px); }
+    .contect-info-main .content-info div a {
+      transition: box-shadow .1s; }
+      .contect-info-main .content-info div a:hover {
+        box-shadow: 0 0 8px #A98729; }
+
+#btn {
+  transition: box-shadow .1s; }
+  #btn:hover {
+    box-shadow: 0 0 8px #A98729; }
+
+.socios_cont {
+  border-top: solid 1px gray; }
 
 /*!
  * Bootstrap v5.0.0-beta3 (https://getbootstrap.com/)

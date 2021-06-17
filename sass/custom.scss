@@ -1,5 +1,10 @@
 // ---Mixinig
-
+@mixin btn-shadow {    
+    transition: box-shadow .1s;
+    &:hover {
+        box-shadow: 0 0 8px $warning;
+    }
+}
 // -----Custom Variables.
 $dark: #000;
 $marron:#1C1B1A;
@@ -67,6 +72,12 @@ header {
                 height: 3.5em;
             }
         }
+
+        .logo {            
+            top: -0.5em;
+            left: 5.5%;
+            width: 5em;
+        }
     }
 }
 
@@ -89,17 +100,10 @@ header {
         font-weight: 1000;
         }
         a{
-            display: inline-block;
-            text-decoration: none;
-            padding: .3em 1.1em;  
-            font-size: 20px;  
-            transition: box-shadow .1s;
-            
-            &:hover {
-                box-shadow: 0 0 8px $warning;
-            }
+            font-size: 20px;
+            @include btn-shadow();
         }
-    }    
+    }       
 }
 
 // ---Imagen Main
@@ -107,6 +111,19 @@ header {
 .img-main {
     img {
         filter: brightness(80%);
+    }
+}
+#line {
+    height: 1px;
+    width: 50%;
+    margin: 0;
+}
+
+@media screen and (min-width:769px) {
+    #line {
+        height: 75%;
+        width: 1px;
+        margin-left: 49%;
     }
 }
 
@@ -119,7 +136,8 @@ header {
     margin: 0 .5em;
 }
 
-#carousel-item {    
+#carousel-item {
+    
     .container-item {
         padding-left: 33%;
         margin-bottom: 3em;
@@ -144,8 +162,23 @@ header {
 
     .content-info {
         backdrop-filter: blur(4px);
+
+        div a {
+            @include btn-shadow();
+        }
     }
 }
+
+// ----- Socios
+#btn {
+    @include btn-shadow();
+}
+
+.socios_cont {
+    border-top: solid 1px gray;
+}
+
+
 // ----------
 
 @import"../node_modules/bootstrap/scss/bootstrap.scss";
