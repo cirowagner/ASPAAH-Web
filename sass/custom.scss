@@ -1,17 +1,20 @@
 // ---Mixinig
 @mixin btn-shadow {    
-    transition: box-shadow .1s;
+    transition: box-shadow .1s;    
     &:hover {
         box-shadow: 0 0 8px $warning;
     }
 }
-// -----Custom Variables.
+
+// -----Custom Variables Bootstrap.
 $dark: #000;
-$marron:#1C1B1A;
+$info: #1C1B1A;
 $warning: #A98729;
 $success: #0c2c03;
 $font-family-sans-serif: 'Roboto', sans-serif;
 
+//----- Variables
+$marron:#1C1B1A;
 //--------------------------
 // ---Header.
 
@@ -19,7 +22,9 @@ header {
     background-image: url("../img/forest-mobile1.jpeg");
     background-repeat: no-repeat;
     background-size: 100%; 
-    position: relative;   
+    position: relative;
+
+    // ---- Logo
 
     .logo {
         position: absolute;
@@ -33,6 +38,8 @@ header {
         }
         cursor: pointer;
     }
+
+    // ---- Nav
     
     #nav-link {        
         color: white;
@@ -54,7 +61,9 @@ header {
             opacity: 1;            
         }
     }
-
+    
+    // ---- Nav menu-fixed
+    
     .menu-fixed {        
         position: fixed;
         z-index: 101;
@@ -127,7 +136,7 @@ header {
     }
 }
 
-//--- Carrusel
+//--- Slide 1
 
 #indicators {
     border-radius: 100%;
@@ -154,7 +163,7 @@ header {
     }
 }
 
-// --- Info
+// --- About us
 .contect-info-main{    
     background-image: url(../img/paisaje2.jpg);
     background-repeat: no-repeat;
@@ -169,16 +178,21 @@ header {
     }
 }
 
-// ----- Socios
+// ----- Partners
 #btn {
     @include btn-shadow();
 }
-
-.socios_cont {
+.icon-socio {
+    padding-right: 12px;
+}
+.socios-line-top {
+    border-bottom: solid 1px gray;
+}
+.socios-line-bottom {
     border-top: solid 1px gray;
 }
 
 
-// ----------
+// ----- Imports
 
 @import"../node_modules/bootstrap/scss/bootstrap.scss";
