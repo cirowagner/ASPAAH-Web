@@ -162,16 +162,68 @@ header {
         
     }
 }
+// ----- slider 2
 
-// --- About us
+.slider__container{
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+.slider__anterior,
+.slider__siguiente{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #ffffff;
+    opacity: 20%;
+}
+
+.slider__anterior:hover,
+.slider__siguiente:hover{
+    opacity: 100%;
+}
+
+.slider__anterior{
+    left: -30px;
+}
+.slider__siguiente{
+    right: -30px;
+}
+.slider__list{
+    overflow: hidden;
+}
+.slider__element{
+    text-align: center;
+}
+.slider__indicadores .glider-dot{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #ffffff;
+    opacity: .2;
+    border-radius: 0;
+}
+.slider__indicadores .glider-dot:hover{
+    opacity: .5;
+}
+.slider__indicadores .glider-dot.active{
+    opacity: 1;
+}
+
+    // --- About us
 .contect-info-main{    
     background-image: url(../img/paisaje2.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;    
-
+    background-size: 100%;
     .content-info {
         backdrop-filter: blur(4px);
-
         div a {
             @include btn-shadow();
         }

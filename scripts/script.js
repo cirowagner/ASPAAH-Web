@@ -10,3 +10,17 @@ $(document).ready(function(){
 		}
 	})
 });
+//<!-- Slider -->
+window.addEventListener('load',function (){
+	new Glider(document.querySelector('.slider__list'), {
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		draggable: true,
+		dots: '.slider__indicadores',
+		arrows: {
+			prev: '.slider__anterior',
+			next: '.slider__siguiente'
+		},
+
+	});
+});
